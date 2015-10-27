@@ -22,7 +22,7 @@ curl $CONNECT_URL > $CONNECT_DOWNLOAD
 unzip $CONNECT_DOWNLOAD
 rm $CONNECT_DOWNLOAD
 java -jar Sauce-Connect.jar --readyfile $READY_FILE \
-    --verbose \
+    --debug \
     --tunnel-identifier $TRAVIS_JOB_NUMBER \
     $SAUCE_USERNAME $SAUCE_ACCESS_KEY &
 
